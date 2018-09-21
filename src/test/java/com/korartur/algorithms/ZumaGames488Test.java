@@ -10,7 +10,7 @@ public class ZumaGames488Test {
     public void Test(){
         ZumaGames488 z = new ZumaGames488();
 
-        Assert.assertEquals(2, z.findMinStep("RRWWRRBBRR", "WB"));
+        Assert.assertEquals(-1, z.findMinStep("RRWWRRBBRR", "WB"));
     }
 
     @Test
