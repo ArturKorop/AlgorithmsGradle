@@ -17,7 +17,7 @@ public class ContiguousArray525Test {
     public void Test2(){
         ContiguousArray525 c = new ContiguousArray525();
 
-        Assert.assertEquals(8, c.findMaxLength(new int[]{0,1,1,0,1,1,1,0}));
+        Assert.assertEquals(4, c.findMaxLength(new int[]{0,1,1,0,1,1,1,0}));
     }
 
 }
