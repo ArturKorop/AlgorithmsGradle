@@ -24,7 +24,7 @@ public class DailyTemperature739Test {
     public void Test3(){
         var d = new DailyTemperature739();
 
-        Assert.assertArrayEquals(new int[]{1,0}, d.dailyTemperatures(new int[]{47,47}));
+        Assert.assertArrayEquals(new int[]{0,0}, d.dailyTemperatures(new int[]{47,47}));
     }
 
 }
