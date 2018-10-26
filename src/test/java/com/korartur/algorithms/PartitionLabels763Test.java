@@ -1,10 +1,8 @@
 package com.korartur.algorithms;
 
-import com.koratur.algorithms.PartitionLabels763;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class PartitionLabels763Test {

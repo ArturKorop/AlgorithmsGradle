@@ -1,9 +1,6 @@
 package com.korartur.algorithms;
 
-import com.koratur.algorithms.RandomFlipMatrix519;
 import org.junit.Test;
-
-import java.util.HashMap;
 
 public class RandomFlipMatrix519Test {
 

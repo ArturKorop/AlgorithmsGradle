@@ -1,6 +1,5 @@
 package com.korartur.algorithms;
 
-import com.koratur.algorithms.MaxChunksToMakeSorted769;
 import org.junit.Assert;
 import org.junit.Test;
 

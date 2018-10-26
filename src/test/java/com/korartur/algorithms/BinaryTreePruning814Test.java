@@ -1,8 +1,6 @@
 package com.korartur.algorithms;
 
-import com.koratur.algorithms.BinaryTreePruning814;
-import com.koratur.utils.TreeNode;
-import com.koratur.utils.TreeNodeBuilder;
+import com.korartur.utils.TreeNode;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -12,10 +10,10 @@ public class BinaryTreePruning814Test {
     public void test1(){
         var b = new BinaryTreePruning814();
 
-        TreeNode node = TreeNodeBuilder.build2(new Integer[]{1, null, 0,0,1});
+        TreeNode node = TreeNode.build(new Integer[]{1, null, 0,0,1});
         TreeNode res = b.pruneTree(node);
 
-        Assert.assertTrue(TreeNode.areEqual(res, TreeNodeBuilder.build2(new Integer[]{1,null,0,null,1})));
+        Assert.assertTrue(TreeNode.areEqual(res, TreeNode.build(new Integer[]{1,null,0,null,1})));
 
     }
 

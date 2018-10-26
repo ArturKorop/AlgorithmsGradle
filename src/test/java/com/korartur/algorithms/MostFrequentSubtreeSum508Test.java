@@ -1,8 +1,6 @@
 package com.korartur.algorithms;
 
-import com.koratur.algorithms.MostFrequentSubtreeSum508;
-import com.koratur.utils.TreeNode;
-import com.koratur.utils.TreeNodeBuilder;
+import com.korartur.utils.TreeNode;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -15,7 +13,7 @@ public class MostFrequentSubtreeSum508Test {
         MostFrequentSubtreeSum508 m = new MostFrequentSubtreeSum508();
 
 
-        TreeNode t = TreeNodeBuilder.build(new Integer[]{5,2,-5});
+        TreeNode t = TreeNode.build(new Integer[]{5,2,-5});
         int[] res = m.findFrequentTreeSum(t);
 
         Assert.assertArrayEquals(new int[]{2}, res);
@@ -26,7 +24,7 @@ public class MostFrequentSubtreeSum508Test {
         MostFrequentSubtreeSum508 m = new MostFrequentSubtreeSum508();
 
 
-        TreeNode t = TreeNodeBuilder.build(new Integer[]{5,2,-3});
+        TreeNode t = TreeNode.build(new Integer[]{5,2,-3});
         int[] res = m.findFrequentTreeSum(t);
 
         Arrays.sort(res);

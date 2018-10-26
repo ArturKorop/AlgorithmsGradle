@@ -1,7 +1,6 @@
 package com.korartur.algorithms;
 
-import com.koratur.algorithms.FindBottomLeftTreeValue513;
-import com.koratur.utils.TreeNodeBuilder;
+import com.korartur.utils.TreeNode;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -11,7 +10,7 @@ public class FindBottomLeftTreeValue513Test {
     public void Test1(){
         FindBottomLeftTreeValue513 f = new FindBottomLeftTreeValue513();
 
-        Assert.assertEquals(1, f.findBottomLeftValue(TreeNodeBuilder.build(new Integer[]{2,1,3})));
+        Assert.assertEquals(1, f.findBottomLeftValue(TreeNode.build(new Integer[]{2,1,3})));
     }
 
     @Test
@@ -20,13 +19,13 @@ public class FindBottomLeftTreeValue513Test {
 
         Assert.assertEquals(7,
                 f.findBottomLeftValue(
-                        TreeNodeBuilder.build(new Integer[]{1,2,3,4,null,5,6,null,null,null,null,7,null,null,null})));
+                        TreeNode.build(new Integer[]{1,2,3,4,null,5,6,null,null,7})));
     }
 
     @Test
     public void Test3(){
         FindBottomLeftTreeValue513 f = new FindBottomLeftTreeValue513();
 
-        Assert.assertEquals(-1, f.findBottomLeftValue(TreeNodeBuilder.build(new Integer[]{0,null,-1})));
+        Assert.assertEquals(-1, f.findBottomLeftValue(TreeNode.build(new Integer[]{0,null,-1})));
     }
 }

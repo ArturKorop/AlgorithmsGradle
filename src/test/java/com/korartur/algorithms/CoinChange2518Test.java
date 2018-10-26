@@ -1,6 +1,5 @@
 package com.korartur.algorithms;
 
-import com.koratur.algorithms.CoinChange2518;
 import org.junit.Assert;
 import org.junit.Test;
 

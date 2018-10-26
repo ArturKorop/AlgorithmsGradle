@@ -1,6 +1,5 @@
 package com.korartur.algorithms;
 
-import com.koratur.algorithms.FriendCircles547;
 import org.junit.Assert;
 import org.junit.Test;
 

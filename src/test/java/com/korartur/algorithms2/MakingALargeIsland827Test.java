@@ -1,6 +1,5 @@
 package com.korartur.algorithms2;
 
-import com.koratur.algorithms2.MakingALargeIsland827;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,6 +1,5 @@
 package com.korartur.algorithms;
 
-import com.koratur.algorithms.rand10UsingRand7470;
 import org.junit.Test;
 
 public class rand10UsingRand7470Test {
