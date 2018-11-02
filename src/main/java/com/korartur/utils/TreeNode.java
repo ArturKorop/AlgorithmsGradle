@@ -9,6 +9,11 @@ public class TreeNode {
       public TreeNode right;
       public TreeNode(int x) { val = x; }
 
+      @Override
+      public String toString() {
+            return String.valueOf(val);
+      }
+
       public static boolean areEqual(TreeNode a, TreeNode b) {
             if(a == null && b == null) return true;
             if(a == null || b == null) return false;
@@ -16,7 +21,7 @@ public class TreeNode {
             return a.val == b.val && areEqual(a.left, b.left) && areEqual(a.right, b.right);
       }
 
-      public static TreeNode build(Integer[] input) {
+      public static TreeNode build(Integer... input) {
             TreeNode root = new TreeNode(input[0]);
             Queue<TreeNode> queue = new ArrayDeque<>();
             queue.add(root);
