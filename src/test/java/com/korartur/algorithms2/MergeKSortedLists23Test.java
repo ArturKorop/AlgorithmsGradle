@@ -1,0 +1,21 @@
+package com.korartur.algorithms2;
+
+import com.korartur.utils.ListNode;
+import org.junit.Assert;
+import org.junit.Test;
+
+public class MergeKSortedLists23Test {
+
+    @Test
+    public void test1(){
+        var m = new MergeKSortedLists23();
+        ListNode[] data = new ListNode[]{
+                ListNode.build(new int[]{1,4,5}),
+                ListNode.build(new int[]{1,3,4}),
+                ListNode.build(new int[]{2,6}),
+        };
+
+        Assert.assertTrue(ListNode.equals(m.mergeKLists(data)
+                , ListNode.build(new int[]{1,1,2,3,4,4,5,6})));
+    }
+}
