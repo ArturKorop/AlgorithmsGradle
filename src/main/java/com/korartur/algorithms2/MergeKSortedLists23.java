@@ -26,7 +26,7 @@ public class MergeKSortedLists23 {
             l = temp;
         }
 
-        return lists[0];
+        return l.get(0);
     }
 
     private ListNode merge(ListNode a, ListNode b){
