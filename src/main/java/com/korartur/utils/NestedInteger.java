@@ -1,7 +1,5 @@
 package com.korartur.utils;
 
-import com.korartur.algorithms3.FlattenNestedListIterator341;
-
 import java.util.List;
 
 public interface NestedInteger {

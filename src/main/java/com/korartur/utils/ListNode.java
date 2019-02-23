@@ -19,7 +19,7 @@ package com.korartur.utils;
          return aN == null && bN == null;
      }
 
-     public static ListNode build(int[] data){
+     public static ListNode build(int... data){
          ListNode root = new ListNode(data[0]);
          ListNode temp = root;
          for(int i = 1; i < data.length; i++){
@@ -27,5 +27,22 @@ package com.korartur.utils;
              temp = temp.next;
          }
          return root;
+     }
+
+     @Override
+     public String toString() {
+         var temp = this;
+         var sb = new StringBuilder();
+         sb.append("[");
+         while (temp != null){
+             sb.append(temp.val);
+             sb.append(',');
+             temp = temp.next;
+         }
+
+         sb.deleteCharAt(sb.length()-1);
+         sb.append("]");
+
+         return sb.toString();
      }
  }
