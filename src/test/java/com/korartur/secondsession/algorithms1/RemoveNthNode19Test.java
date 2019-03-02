@@ -12,7 +12,7 @@ public class RemoveNthNode19Test {
         var node = ListNode.build(1,2,3,4,5);
         var res = r.removeNthFromEnd(node, 2);
 
-        Assert.assertTrue(ListNode.equals(res, ListNode.build(1,2,3,5)));
+        Assert.assertTrue(ListNode.areEqual(res, ListNode.build(1,2,3,5)));
     }
 
     @Test
@@ -22,7 +22,7 @@ public class RemoveNthNode19Test {
         var node = ListNode.build(1,2,3,4,5);
         var res = r.removeNthFromEnd2(node, 2);
 
-        Assert.assertTrue(ListNode.equals(res, ListNode.build(1,2,3,5)));
+        Assert.assertTrue(ListNode.areEqual(res, ListNode.build(1,2,3,5)));
     }
 
     @Test
@@ -32,7 +32,7 @@ public class RemoveNthNode19Test {
         var node = ListNode.build(1);
         var res = r.removeNthFromEnd2(node, 1);
 
-        Assert.assertTrue(ListNode.equals(res, null));
+        Assert.assertTrue(ListNode.areEqual(res, null));
     }
 
     @Test
@@ -42,7 +42,7 @@ public class RemoveNthNode19Test {
         var node = ListNode.build(1,2);
         var res = r.removeNthFromEnd2(node, 2);
 
-        Assert.assertTrue(ListNode.equals(res, ListNode.build(2)));
+        Assert.assertTrue(ListNode.areEqual(res, ListNode.build(2)));
     }
 
     @Test
@@ -52,6 +52,6 @@ public class RemoveNthNode19Test {
         var node = ListNode.build(1,2);
         var res = r.removeNthFromEnd2(node, 1);
 
-        Assert.assertTrue(ListNode.equals(res, ListNode.build(1)));
+        Assert.assertTrue(ListNode.areEqual(res, ListNode.build(1)));
     }
 }

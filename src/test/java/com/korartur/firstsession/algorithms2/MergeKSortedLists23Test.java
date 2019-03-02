@@ -16,6 +16,6 @@ public class MergeKSortedLists23Test {
         };
 
         var res = m.mergeKLists(data);
-        Assert.assertTrue(ListNode.equals(res, ListNode.build(new int[]{1,1,2,3,4,4,5,6})));
+        Assert.assertTrue(ListNode.areEqual(res, ListNode.build(new int[]{1,1,2,3,4,4,5,6})));
     }
 }

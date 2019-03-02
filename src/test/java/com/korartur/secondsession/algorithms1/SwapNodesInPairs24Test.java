@@ -11,7 +11,7 @@ public class SwapNodesInPairs24Test {
         var node = ListNode.build(1,2,3,4);
         var res = s.swapPairs(node);
 
-        Assert.assertTrue(ListNode.equals(res, ListNode.build(2,1,4,3)));
+        Assert.assertTrue(ListNode.areEqual(res, ListNode.build(2,1,4,3)));
     }
 
     @Test
@@ -20,7 +20,7 @@ public class SwapNodesInPairs24Test {
         var node = ListNode.build(1);
         var res = s.swapPairs(node);
 
-        Assert.assertTrue(ListNode.equals(res, ListNode.build(1)));
+        Assert.assertTrue(ListNode.areEqual(res, ListNode.build(1)));
     }
 
     @Test
@@ -29,6 +29,6 @@ public class SwapNodesInPairs24Test {
         var node = ListNode.build(1,2,3);
         var res = s.swapPairs(node);
 
-        Assert.assertTrue(ListNode.equals(res, ListNode.build(2,1,3)));
+        Assert.assertTrue(ListNode.areEqual(res, ListNode.build(2,1,3)));
     }
 }

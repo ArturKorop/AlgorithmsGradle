@@ -23,7 +23,7 @@ public class MagicDictionary676 {
         }
     }
 
-    /** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */
+    /** Returns if there is any word in the trie that areEqual to the given word after modifying exactly one character */
     public boolean search(String word) {
         int l =  word.length();
         if(!map.containsKey(l)) return false;

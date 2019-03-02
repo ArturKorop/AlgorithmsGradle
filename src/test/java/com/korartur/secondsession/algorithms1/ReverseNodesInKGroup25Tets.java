@@ -11,7 +11,7 @@ public class ReverseNodesInKGroup25Tets {
         var node = ListNode.build(1,2,3,4,5);
         var res = r.reverseKGroup(node, 3);
 
-        Assert.assertTrue(ListNode.equals(res, ListNode.build(3,2,1,4,5)));
+        Assert.assertTrue(ListNode.areEqual(res, ListNode.build(3,2,1,4,5)));
     }
 
     @Test
@@ -20,6 +20,6 @@ public class ReverseNodesInKGroup25Tets {
         var node = ListNode.build(1,2,3,4,5,6);
         var res = r.reverseKGroup(node, 3);
 
-        Assert.assertTrue(ListNode.equals(res, ListNode.build(3,2,1,6,5,4)));
+        Assert.assertTrue(ListNode.areEqual(res, ListNode.build(3,2,1,6,5,4)));
     }
 }

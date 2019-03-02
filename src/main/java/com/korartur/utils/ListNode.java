@@ -8,7 +8,7 @@ package com.korartur.utils;
          val = x;
      }
 
-     public static boolean equals(ListNode a, ListNode b) {
+     public static boolean areEqual(ListNode a, ListNode b) {
          ListNode aN = a;
          ListNode bN = b;
          while (aN != null && bN != null) {

@@ -9,20 +9,20 @@ public class RotateList61Test {
     public void test1() {
         var r = new RotateList61();
         var root = ListNode.build(1,2,3,4,5);
-        Assert.assertTrue(ListNode.equals(ListNode.build(4,5,1,2,3), r.rotateRight(root, 2)));
+        Assert.assertTrue(ListNode.areEqual(ListNode.build(4,5,1,2,3), r.rotateRight(root, 2)));
     }
 
     @Test
     public void test2() {
         var r = new RotateList61();
         var root = ListNode.build(0,1,2);
-        Assert.assertTrue(ListNode.equals(ListNode.build(2,0,1), r.rotateRight(root, 4)));
+        Assert.assertTrue(ListNode.areEqual(ListNode.build(2,0,1), r.rotateRight(root, 4)));
     }
 
     @Test
     public void test3() {
         var r = new RotateList61();
         var root = ListNode.build(1,2);
-        Assert.assertTrue(ListNode.equals(ListNode.build(2,1), r.rotateRight(root, 1)));
+        Assert.assertTrue(ListNode.areEqual(ListNode.build(2,1), r.rotateRight(root, 1)));
     }
 }

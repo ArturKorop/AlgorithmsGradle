@@ -58,9 +58,9 @@ public class ExpressionAddOperators282Test {
 
         Assert.assertEquals(9, res.length);
 //        Arrays.sort(res);
-//        Assert.assertTrue("0*0".equals(res[0]));
-//        Assert.assertTrue("0+0".equals(res[1]));
-//        Assert.assertTrue("0-0".equals(res[2]));
+//        Assert.assertTrue("0*0".areEqual(res[0]));
+//        Assert.assertTrue("0+0".areEqual(res[1]));
+//        Assert.assertTrue("0-0".areEqual(res[2]));
     }
 
     @Test

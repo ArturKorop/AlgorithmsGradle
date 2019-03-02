@@ -13,6 +13,6 @@ public class AddTwoNumber2Test {
         var input2 = ListNode.build(5,6,4);
 
 
-        Assert.assertTrue(ListNode.equals(ListNode.build(7,0,8), a.addTwoNumbers(input1, input2)));
+        Assert.assertTrue(ListNode.areEqual(ListNode.build(7,0,8), a.addTwoNumbers(input1, input2)));
     }
 }
