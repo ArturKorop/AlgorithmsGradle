@@ -1,6 +1,9 @@
 package com.korartur.utils;
 
- public class ListNode {
+import java.util.HashSet;
+import java.util.Set;
+
+public class ListNode {
      public int val;
      public ListNode next;
 
@@ -31,10 +34,16 @@ package com.korartur.utils;
 
      @Override
      public String toString() {
+         Set<ListNode> set = new HashSet<>();
          var temp = this;
          var sb = new StringBuilder();
          sb.append("[");
          while (temp != null){
+             if(set.contains(temp)){
+                 break;
+             }
+
+             set.add(temp);
              sb.append(temp.val);
              sb.append(',');
              temp = temp.next;
@@ -45,4 +54,37 @@ package com.korartur.utils;
 
          return sb.toString();
      }
+
+    public static void connectNode(ListNode head, int connectIndex){
+        ListNode temp = head;
+        ListNode pivot = null;
+        ListNode tail = null;
+        int count = 0;
+        while (temp != null){
+            if(count == connectIndex){
+                pivot = temp;
+            }
+
+            count++;
+
+            if(temp.next == null){
+                tail = temp;
+            }
+
+            temp = temp.next;
+        }
+
+        tail.next = pivot;
+    }
+
+    public static ListNode getNode(ListNode head, int index){
+         var temp = head;
+         int count = 0;
+         while (count < index){
+             count++;
+             temp = temp.next;
+         }
+
+         return temp;
+    }
  }
